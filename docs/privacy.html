@@ -3,76 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy · SpeakNow</title>
+<script>
+  try { var t = localStorage.getItem('speaknow-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<title data-i18n-page-title="pp.doc.title">Privacy policy · SpeakNow</title>
 <meta name="description" content="How SpeakNow handles your voice and your data: everything stays on your phone.">
 <meta name="theme-color" content="#1B1847">
+<link rel="canonical" href="https://speaknow.dev/privacy.html">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body class="page-doc">
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="./" aria-label="SpeakNow home">
+    <a class="brand" href="./" aria-label="SpeakNow">
       <img src="assets/icon.svg" alt="" width="36" height="36">
       <span>SpeakNow</span>
     </a>
-    <nav aria-label="Main">
-      <a href="./#features">Features</a>
-      <a href="./#install">Install</a>
-      <a href="./#faq">FAQ</a>
+    <nav id="site-nav" class="nav-links" aria-label="Main">
+      <a href="./#features" data-i18n="nav.features">Features</a>
+      <a href="./#install" data-i18n="nav.install">Install</a>
+      <a href="./#faq" data-i18n="nav.faq">FAQ</a>
     </nav>
-    <a class="btn btn-small" href="./#install">Download</a>
+    <div class="nav-tools">
+      <label class="select">
+        <span class="sr-only" data-i18n="lang.label">Language</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg>
+        <select class="js-lang">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="mg">MG</option>
+        </select>
+      </label>
+      <button class="icon-btn js-theme" type="button" aria-label="Theme">
+        <svg class="i-auto" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+        <svg class="i-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <svg class="i-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-small nav-download" href="./#install" data-i18n="nav.download">Download</a>
+      <button class="icon-btn menu-btn js-menu" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
-<main class="wrap doc">
-  <h1>Privacy policy</h1>
-  <p class="updated">Last updated: 4 October 2026</p>
+<main id="main" class="wrap doc">
+  <h1 data-i18n="pp.title">Privacy policy</h1>
+  <p class="updated" data-i18n="pp.updated">Last updated: 4 October 2026</p>
+  <p data-i18n="pp.intro">SpeakNow helps you practise English pronunciation. It is built so that your voice and your practice data stay on your phone.</p>
 
-  <p>SpeakNow helps you practise English pronunciation. It is built so that your voice and your practice data stay on your phone.</p>
-
-  <h2>Your voice</h2>
+  <h2 data-i18n="pp.voice.t">Your voice</h2>
   <ul>
-    <li>The microphone is used <strong>only while you are reading</strong> a line or a text.</li>
-    <li>Your speech is understood by your phone itself, without going through the internet. SpeakNow receives the words that were recognised, never the sound.</li>
-    <li>With the optional advanced analysis, SpeakNow listens to the sound itself, in the phone’s memory only. Your last attempt is kept in memory so you can play it back, and it is erased as soon as you read the next line or leave the screen.</li>
-    <li><strong>No recording is ever saved or sent anywhere.</strong></li>
+    <li data-i18n="pp.voice.1_html">The microphone is used <strong>only while you are reading</strong> a line or a text.</li>
+    <li data-i18n="pp.voice.2">Your speech is understood by your phone itself, without going through the internet. SpeakNow receives the words that were recognised, never the sound.</li>
+    <li data-i18n="pp.voice.3">With the optional advanced analysis, SpeakNow listens to the sound itself, in the phone’s memory only. Your last attempt is kept in memory so you can play it back, and it is erased as soon as you read the next line or leave the screen.</li>
+    <li data-i18n="pp.voice.4_html"><strong>No recording is ever saved or sent anywhere.</strong></li>
   </ul>
 
-  <h2>What is kept on your phone</h2>
-  <p>Your scores, statistics about English sounds, the texts you add and your settings. This information never leaves your phone unless you export it yourself (Settings → Export my data). It is not included in cloud backups or phone-to-phone transfers. You can delete everything at any time (Settings → Delete everything).</p>
+  <h2 data-i18n="pp.data.t">What is kept on your phone</h2>
+  <p data-i18n="pp.data.p">Your scores, statistics about English sounds, the texts you add and your settings. This information never leaves your phone unless you export it yourself (Settings → Export my data). It is not included in cloud backups or phone-to-phone transfers. You can delete everything at any time (Settings → Delete everything).</p>
 
-  <h2>Notifications</h2>
-  <p>If you turn on the daily reminder, SpeakNow asks for permission to show notifications and plans one reminder per day on your phone. It is skipped on days you have already practised. You can turn it off at any time.</p>
+  <h2 data-i18n="pp.notif.t">Notifications</h2>
+  <p data-i18n="pp.notif.p">If you turn on the daily reminder, SpeakNow asks for permission to show notifications and plans one reminder per day on your phone. It is skipped on days you have already practised. You can turn it off at any time.</p>
 
-  <h2>Internet</h2>
-  <p>SpeakNow uses the internet <strong>only to download content you choose</strong>, such as natural voices, texts and the advanced analysis, and to see which content is available. These files are hosted by GitHub (GitHub, Inc.), which, like any website, sees the address of the connection and the file requested. SpeakNow sends no name, account, identifier or personal information. GitHub’s privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
+  <h2 data-i18n="pp.net.t">Internet</h2>
+  <p data-i18n="pp.net.p_html">SpeakNow uses the internet <strong>only to download content you choose</strong>, such as natural voices, texts and the advanced analysis, and to see which content is available. These files are hosted by GitHub (GitHub, Inc.), which, like any website, sees the address of the connection and the file requested. SpeakNow sends no name, account, identifier or personal information. GitHub’s privacy statement: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com</a>.</p>
 
-  <h2>What SpeakNow does not do</h2>
-  <p>No account, no advertising, no analytics, no tracking, no sale or sharing of data, and no access to your contacts, location or files.</p>
+  <h2 data-i18n="pp.not.t">What SpeakNow does not do</h2>
+  <p data-i18n="pp.not.p">No account, no advertising, no analytics, no tracking, no sale or sharing of data, and no access to your contacts, location or files.</p>
 
-  <h2>Children</h2>
-  <p>SpeakNow is not directed at children under 13. It collects no personal data from anyone.</p>
+  <h2 data-i18n="pp.kids.t">Children</h2>
+  <p data-i18n="pp.kids.p">SpeakNow is not directed at children under 13. It collects no personal data from anyone.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+  <h2 data-i18n="pp.contact.t">Contact</h2>
+  <p data-i18n="pp.contact.p_html">Questions about this policy: <a href="mailto:emachut.work@gmail.com">emachut.work@gmail.com</a></p>
 
-  <h2>Changes</h2>
-  <p>Any change to this policy will be published on this page with a new date.</p>
+  <h2 data-i18n="pp.changes.t">Changes</h2>
+  <p data-i18n="pp.changes.p">Any change to this policy will be published on this page with a new date.</p>
 </main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <div class="brand">
-      <img src="assets/icon.svg" alt="" width="28" height="28">
-      <span>SpeakNow</span>
+    <div class="footer-brand">
+      <div class="brand">
+        <img src="assets/icon.svg" alt="" width="28" height="28">
+        <span>SpeakNow</span>
+      </div>
+      <p><span data-i18n="footer.by">Made by Machut Eliandraza</span> · © 2026 · <a href="./" data-i18n="pp.home">Home</a></p>
     </div>
-    <p>© 2026 SpeakNow · <a href="./">Home</a></p>
+    <nav class="social" aria-label="Contact">
+      <a href="mailto:emachut.work@gmail.com" aria-label="Email: emachut.work@gmail.com" title="emachut.work@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61552722374374" rel="noopener" aria-label="Facebook: ELIANDRAZA Machut" title="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M13.5 21v-7h2.4l.4-2.9h-2.8V9.3c0-.8.3-1.4 1.4-1.4h1.5V5.3c-.3 0-1.2-.1-2.2-.1-2.2 0-3.6 1.3-3.6 3.7v2.2H8.2V14h2.4v7z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/machut-eliandraza-a1ba381b6/" rel="noopener" aria-label="LinkedIn: Machut Eliandraza" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M6.9 8.6H3.8V20h3.1zM5.4 3.6a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM20.2 13.4c0-3-1.6-4.9-4.3-4.9-1.4 0-2.4.7-2.9 1.5V8.6H10V20h3.1v-5.8c0-1.5.7-2.6 2-2.6s1.9 1 1.9 2.6V20h3.2z"/></svg>
+      </a>
+      <a href="https://github.com/machut-rgb" rel="noopener" aria-label="GitHub: machut-rgb" title="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.2-1.2-3.2-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.1-.2-4.4-1.1-4.4-4.7 0-1 .4-1.9 1-2.6-.1-.2-.4-1.2.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.7 0c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.5.6.7 1 1.6 1 2.6 0 3.7-2.3 4.5-4.4 4.7.3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5z"/></svg>
+      </a>
+    </nav>
   </div>
 </footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>
