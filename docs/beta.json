@@ -1,1 +1,15 @@
-{"available": false}
+{
+  "available": true,
+  "version": "1.2.0",
+  "date": "2026-10-04",
+  "sizeMb": "101.0",
+  "sha256": "96030bbfca0c9c33297235abef5d10d9146b2a63406a407b9bffadf45283218b",
+  "url": "https://github.com/machut-rgb/speaknow-pack/releases/download/beta/SpeakNow-beta.apk",
+  "notes": [
+    "Listen to the whole text, with the words lighting up like song lyrics",
+    "New look: new icon and colours",
+    "Streaks, streak freezes and achievements",
+    "Sound drills with word pairs (ship / sheep)",
+    "Replay your own voice next to the native voice"
+  ]
+}
